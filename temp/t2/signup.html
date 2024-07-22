@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AKVN - Technologies - Sign Up</title>
+    <meta name="description" content="Sign Up" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link rel="stylesheet" href="assets/css/signup.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-fixed">
+            <div class="container">
+                <div class="row flex-nowrap align-items-center justify-content-between">
+                    <div class="col-auto header-fixed-col logo-wrapper">
+                        <a href="index.html" class="logo" title="AKVN - Technologies">
+                            <img src="assets/img/logo.png" class="logo_img" alt="AKVN - Technologies" />
+                        </a>
+                        <a href="signin.html" class="toggle-btn">Already have an account? Sign in</a>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <!-- start body  -->
+    <div class="container1">
+        <div class="box" id="signup-form">
+            <form onsubmit="return validateSignUp()">
+                <h1>Sign Up</h1>
+                <label for="signup-email">Email</label><br>
+                <input type="email" id="signup-email" placeholder="Enter Email" class="input-box"><br><br>
+                <label for="signup-phone">Phone</label><br>
+                <input type="text" id="signup-phone" placeholder="Enter Phone Number" class="input-box"><br><br>
+                <label for="signup-password">Password</label><br>
+                <div class="password-container">
+                    <input type="password" id="signup-password" placeholder="Enter Password" class="input-box">
+                    <button type="button" onclick="togglePassword('signup-password')">👁️</button>
+                </div>
+                <label for="signup-confirm-password">Confirm Password</label><br>
+                <div class="password-container">
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm Password" class="input-box">
+                    <button type="button" onclick="togglePassword('signup-confirm-password')">👁️</button>
+                </div>
+                <div id="password-match-error" class="error-message"></div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <span class="option">or sign up with</span>
+            <div class="social">
+                <div class="box-radius"><img src="./assets/images/fb.png" alt=""></div>
+                <div class="box-radius"><img src="./assets/images/google.png" alt=""></div>
+                <div class="box-radius"><img src="./assets/images/linkedin.png" alt=""></div>
+                <div class="box-radius"><img src="./assets/images/twitter.png" alt=""></div>
+            </div>
+            <span class="option">Already have an account? <a href="signin.html" class="toggle-btn">Sign in</a></span>
+        </div>
+    </div>
+    <!-- end body  -->
+
+    <script src="assets/js/signup.js"></script>
+</body>
+
+</html>

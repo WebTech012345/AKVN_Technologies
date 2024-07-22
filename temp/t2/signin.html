@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AKVN - Technologies - Sign In</title>
+    <meta name="description" content="Sign In" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link rel="stylesheet" href="assets/css/signup.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-fixed">
+            <div class="container">
+                <div class="row flex-nowrap align-items-center justify-content-between">
+                    <div class="col-auto header-fixed-col logo-wrapper">
+                        <a href="index.html" class="logo" title="AKVN - Technologies">
+                            <img src="assets/img/logo.png" class="logo_img" alt="AKVN - Technologies" />
+                        </a>
+                        <a href="signup.html" class="toggle-btn">Don't have an account? Create one</a>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <!-- start body  -->
+    <div class="container1">
+        <div class="box" id="signin-form">
+            <form onsubmit="return validateSignIn()">
+                <h1>Sign In</h1>
+                <label for="signin-email-phone">Email or Phone</label><br>
+                <input type="text" id="signin-email-phone" placeholder="Enter Email or Phone" class="input-box"><br><br>
+                <label for="signin-password">Password</label><br>
+                <div class="password-container">
+                    <input type="password" id="signin-password" placeholder="Enter Password" class="input-box">
+                    <button type="button" onclick="togglePassword('signin-password')">👁️</button>
+                </div>
+                <div id="signin-error" class="error-message"></div>
+                <div class="remember-forget">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label-text">Remember me</span>
+                    </label>
+                    <span class="fg">
+                        <a href="#">Forget password?</a>
+                    </span>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+            <span class="option">or sign in with</span>
+            <div class="social">
+                <div class="box-radius"><img src="./assets/images/fb.png" alt=""></div>
+                <div class="box-radius"><img src="./assets/images/google.png" alt=""></div>
+                <div class="box-radius"><img src="./assets/images/linkedin.png" alt=""></div>
+                <div class="box-radius"><img src="./assets/images/twitter.png" alt=""></div>
+            </div>
+            <span class="option">Don't have an account? <a href="signup.html" class="toggle-btn">Sign up</a></span>
+        </div>
+    </div>
+    <!-- end body  -->
+
+    <script src="assets/js/signup.js"></script>
+</body>
+
+</html>
