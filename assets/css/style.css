@@ -3513,4 +3513,18 @@ li button {
     background-color: rgba(104, 85, 224, 1); */
   }
   
+  .vic1{
+    /* width:850px;
+    height:500px; */
+    overflow-y:hidden;
+    overflow-x:scroll;
+    display: flex;
+    flex-direction: row;
+        /* width: 60%; */
+        /* margin: auto; */
+        /* margin-block-end: 6rem;/ */
+        /* gap: .5rem; */
+        /* padding: 1rem; */
+  }
+
   

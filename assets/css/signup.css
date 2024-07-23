@@ -333,6 +333,7 @@ a:-webkit-any-link {
     max-height: 65px;
     display: inline-flex;
     text-decoration: none;
+    
 }
 
 /* Small devices (phones, 600px and down) */
@@ -351,6 +352,9 @@ a:-webkit-any-link {
         max-width: 800px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .alternative{
+        display: none;
     }
   }
   
@@ -371,6 +375,43 @@ a:-webkit-any-link {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .alternative{
+        text-align: center;
+        /* margin-top: 10px; */
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 100%;
+    padding-right: var(--bs-gutter-x, 10px);
+    padding-left: var(--bs-gutter-x, 15px);
+    margin-right: auto;
+    max-width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+
+    
   }
   
   /* Large devices (laptops/desktops, 768px and up) */
@@ -381,6 +422,41 @@ a:-webkit-any-link {
          display: inline-flex;
          text-decoration: none;
      }
+     .alternative{
+        text-align: center;
+        /* margin-top: 10px; */
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 100%;
+    padding-right: var(--bs-gutter-x, 10px);
+    padding-left: var(--bs-gutter-x, 15px);
+    margin-right: auto;
+    max-width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -393,4 +469,75 @@ a:-webkit-any-link {
     margin-bottom: 0.3125rem;
     text-transform: uppercase;
     color: var(--accent-color);
+}
+
+.toggle-password{
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.2s;
+    position: absolute;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.25rem 0.5rem;
+    border-radius:50%;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: all 0.2s;
+}
+
+
+
+.box .input-boxp {
+    width: 90%;
+    height: 35px;
+    padding-left: 20px;
+    border: none;
+    color: #858686;
+    margin-top: 10px;
+    background-color: #ecf0f3;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px var(--background-color);
+}
+
+.box .input-boxp::placeholder {
+    color: #9ea0a0;
+}
+
+.alternative{
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+padding-right: var(--bs-gutter-x, 10px);
+padding-left: var(--bs-gutter-x, 15px);
+margin-right: auto;
+max-width: 400px;
+padding-top: 15px;
+padding-bottom: 15px;
 }

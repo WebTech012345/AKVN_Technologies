@@ -1,44 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-    const forms = document.querySelectorAll('.box');
-
-    // Function to toggle visibility of forms
-    toggleButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetForm = this.getAttribute('data-target');
-            toggleForm(targetForm);
-        });
-    });
-
-    // Check localStorage for last selected form and display it
-    const lastSelectedForm = localStorage.getItem('lastSelectedForm');
-    if (lastSelectedForm) {
-        toggleForm(lastSelectedForm);
-    } else {
-        // Default to sign-in form if no last selected form found
-        toggleForm('signin');
-    }
-
-    // Function to toggle form visibility based on target
-    function toggleForm(targetForm) {
-        forms.forEach(form => {
-            if (form.id === targetForm + '-form') {
-                form.classList.remove('is-hidden');
-            } else {
-                form.classList.add('is-hidden');
-            }
-        });
-        // Store the last selected form in localStorage
-        localStorage.setItem('lastSelectedForm', targetForm);
-    }
-});
-
 // Function to toggle password visibility
-function togglePassword(inputId) {
+function togglePassword(inputId, toggleBtn) {
     const input = document.getElementById(inputId);
     const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
     input.setAttribute('type', type);
+
+    // Change the eye icon based on password visibility
+    if (type === 'password') {
+        toggleBtn.textContent = '👁';
+    } else {
+        toggleBtn.textContent = '👁‍🗨';
+    }
 }
 
 // Function to validate sign-in form
